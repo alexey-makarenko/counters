@@ -55,7 +55,7 @@ public class CountersController {
     }
 
     @DeleteMapping("/{id}")
-    public Object changeMoney(@PathVariable String id) {
+    public Object delete(@PathVariable String id) {
         if (id == null) {
             return ResponseEntity.badRequest().build();
         }
